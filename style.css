@@ -1,0 +1,156 @@
+/* color palette 
+1. #deb887
+2. #A4A876
+3. #6F9473
+4. #477C72
+5. #32626B
+6. #2F4858
+*/
+
+/* GLOBAL STYLES
+------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-color:ivory;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.08rem;
+    
+}
+h1 {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4.3rem;
+    margin: 0;
+}
+
+
+a{
+    color:#3c8453 ;
+}
+a:hover {
+    color: #402e32;
+}
+
+.btn{
+    background: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 4px;
+    font-size: 1rem;
+    
+}
+
+.content {
+    margin: 0 auto;
+    width: 900px;
+    padding: 30px;
+}
+/* HOME PAGE
+------------------------------*/
+.homepage {
+    background-image: url(../images/IMG_7357.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage .content {
+    
+    flex: 1 0 auto;
+}
+.homepage .bg-color{
+    background-color: rgb(255 255 255 / 0.6);
+    padding: 30px;
+   
+
+}
+
+/*.homepage .icon {
+     width: 26px;
+     height: 26px;
+}*/
+
+/* RESUME
+------------------------------*/
+.resume header::before{
+    background: url(../images/IMG_7357.jpeg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 380px;
+}
+
+/*.resume .icon{
+    width: 26px;
+    height: 26px; 
+}*/
+.resume section{
+    margin-bottom: 30px ;
+}
+
+.resume section h4{
+    border-bottom: 2px dashed #deb887;
+}
+
+.resume .download-link{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+/* FOOTER
+------------------------------*/
+.social_links li{
+    display: inline-block;
+}
+.social_links{
+    list-style-type: none;
+    padding: 0;
+}
+footer{
+    background-color:rgb(222, 184, 135, 0.8);
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon {
+    width: 26px;
+    height: 26px; 
+    margin-right: 5px;
+}
+.social_links img:hover {
+    opacity: 0.7;
+}
+
+/* WORK EXPERIENCE
+------------------------------*/
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+}
